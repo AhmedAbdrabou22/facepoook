@@ -1,0 +1,661 @@
+*{
+    margin:0;
+    padding:0;
+    color:black;
+}
+:root {
+    --color1:#DADDE1;
+    --color2:#fff;
+    --color3:#1877F2;
+    --color4:#BEC3C9;
+    --color5:#474747;
+    --color6:#31A24c;
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--color1);
+}
+.main{
+    padding:3px;
+    margin-top:60px;
+    overflow: hidden;
+}
+.hr{
+    width:100%;
+    height:2px;
+    background-color: var(--color4);
+    margin-top:5px;
+}
+.true{
+    padding:5px;
+    border-radius: 10px;
+}
+.true:hover{
+    background-color: var(--color4);
+    cursor: pointer;
+}
+
+
+/*Start of style section navigation*/
+.navigation{
+    background-color:var(--color2);
+    padding:3px;
+}
+.navigation .icons{
+    width:480px;
+    padding:3px;
+}
+.navigation .icons span{
+    background-color: var(--color1);
+    width:40px;
+    height:40px;
+    display: inline-block;
+    border-radius: 50%;
+    margin:5px;
+    text-align: center;
+}
+.navigation .icons span i{
+    font-size:19px;
+    margin-top:9px;
+    position:relative;
+}
+.navigation .icons span i:hover{
+    color: var(--color2);
+    cursor:pointer;
+}
+/*End of style  .navigations icons*/
+/*Start of style  .navigations abbreviations*/
+.abbreviations{
+    width:500px;
+    padding:3px;
+}
+.abbreviations div{
+    display:inline;
+    font-size: 36px;
+    padding:5px;
+}
+/*End of style  .navigations abbreviations*/
+
+/*Start of style navigations logo */
+.navigation .logo{
+    margin: 5px;
+}
+.navigation input[type=search]{
+    width:250px;
+    background-color: var(--color1);
+    text-align: end;
+    margin-top:-8px;
+    margin-right:5px;
+}
+.navigation .logo i{
+    font-size:30px;
+    margin-top:5px;
+    color: var(--color3);
+}
+/*End of style avigation and logo*/
+
+/*End of style section navigation*/
+
+/*Start of style section main*/
+/*Start of style section main div pages*/
+
+.main .pages{
+    padding:8px;
+    margin-top:5px;
+    position:fixed;
+    min-height: 50px;
+    max-height:90%;
+    overflow:auto;
+    width:23%;
+}
+.main .pages .profile {
+    border-radius: 10px;
+    margin-top:5px;
+    padding:5px;
+    font-size:13px;
+}
+.main .pages .profile img ,.account img{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+}
+.main .pages .profile:hover{
+    background-color: var(--color4);
+    cursor: pointer;
+}
+.main .pages .profile .watch{
+    margin-top: -18px;
+}
+.main .pages .profile .span{
+    display: inline-block;
+    font-size:13px;
+    margin-left: 5px;
+}
+.main .pages .profile  a{
+    text-decoration: none;
+}
+.main .pages .seeMore{
+    display: none;
+    overflow:auto;
+}
+.main .pages i{
+    font-size: 25px;
+}
+.main .pages .seeMore.show{
+    display: block;
+}
+
+/*End  of style section main div pages*/
+
+/*Start  of style section main div Shortcuts*/
+
+.main .shortcut{
+    margin-top:10px;
+    padding:8px;
+}
+.main .shortcut a{
+    display:none;
+}
+.main .shortcut .show2{
+    display: block;
+}
+
+/*End  of style section main div Shortcuts*/
+
+
+/*Start  of style section main div sponsored*/
+.sponsored{
+    padding:8px;
+    margin-top:5px;
+    position:fixed;
+    min-height: 50px;
+    max-height:90%;
+    overflow:auto;
+    width:23%;
+}
+.sponsored .sponser{
+    position: relative;
+}
+.sponsored .sponser .drop{
+    z-index: 5;
+    position: absolute;
+    top:25%;
+    left:15%;
+    display: none;
+}
+.sponsored .sponser .drop.nav{
+    display:block;
+}
+.sponsored .sponser .drop ul{
+    list-style-type:none;
+    position: absolute;
+    background-color: var(--color2);
+    padding:5px;
+    width:250px;
+    border-radius: 10px;
+    line-height: 25px;
+}
+.sponsored .sponser .drop ul li{
+    padding:5px;
+    border-radius: 10px;
+}
+.sponsored .sponser .drop ul li:hover{
+    background-color: var(--color1);
+}
+.sponsored .sponser img{
+    width:100px;
+    height:100px;
+}
+.sponsored .sponser .span{
+    display:inline-block;
+    vertical-align:middle;
+    line-height:10px;
+}
+.sponsored .sponser .span a{
+    color:var(--color5);
+    text-decoration: none;
+
+}
+.sponsored .sponser{
+    padding:8px;
+    margin-top:8px;
+    border-radius:10px;
+}
+.sponsored .sponser i{
+    float:right;
+    color:var(--color4);
+    background-color: white;
+    border-radius:50%;
+    width:25px;
+    height:25px;
+    text-align: center;
+    display: none;
+    line-height:25px;
+}
+.sponsored .sponser:hover{
+    background-color: var(--color4);
+    cursor:pointer;
+}
+.main .sponser .show3{
+    display:block;
+}
+.main .sponsored .noti i,#noti {
+    color:var(--color5);
+    font-size: 20px;
+}
+.main .sponsored .noti #noti{
+    font-size:16px;
+}
+/*End  of style section main div sponsored*/
+
+/*Start of style section main div concat*/
+.main .concat{
+    margin-top:10px;
+    padding:5px;
+}
+.main .concat p{
+    color:var(--color5);
+    display:inline;
+    float:left;
+}
+.main .concat .room{
+    display: inline;
+    float: right;
+}
+.main .concat .room i{
+    margin-right:10px;
+    color:var(--color5);
+    cursor: pointer;
+}
+.main .concat .personActive .pesronOne img{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+}
+.main .concat .personActive .pesronOne .ree{
+    border:3px solid blue;
+}
+.main .concat .personActive .pesronOne{
+    position: relative;
+    padding:5px;
+    border-radius: 10px;
+}
+.main .concat .personActive .pesronOne:hover{
+    background-color: var(--color4);
+}
+.main .concat .personActive .pesronOne .num{
+    position:absolute;
+    top:70%;
+    lefT:10%;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background-color:var(--color6);
+}
+/*End of style section main div concat*/
+
+/*Start of style section main div group*/
+.main .groub{
+    margin-top:10px;
+}
+.main .groub .gro i{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    background-color: var(--color4);
+    text-align: center;
+    line-height:25px;
+}
+/*End of style section main div group*/
+.main .cc{
+    position: relative;
+}
+.main .storys .story , .story2 , .story3 , .story4 , .story5{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:35vh;
+    position: relative;
+    padding:5px;
+    border-radius: 10px;
+    width:150px;
+}
+.main  .circle{
+    border-radius: 10px;
+    position:absolute;
+    z-index:5;
+    top:5%;
+    text-align: center;
+    width:75px;
+    cursor:pointer;
+}
+.main  .circle i {
+    font-size: 18px;
+    color: #1877F2;
+}
+.main  .circle img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+.main .circle{
+    display: none;
+}
+.main .circle.blo{
+    display: block;
+}
+
+.main .storys .story2{
+    background-image: url(../images/s2.jpg);
+    transition: 0.2s;
+    overflow:hidden;
+}
+.main .storys .story{
+    background-image: url(../images/s1.jpg);
+    transition: 0.2s;
+    overflow:hidden;
+}
+.main .storys .story:hover{
+    transform:scale(1.1);
+    opacity: 0.8;
+}
+.main .storys .story2:hover{
+    transform:scale(1.1);
+    opacity: 0.8;
+}
+.main .storys .story3:hover{
+    transform:scale(1.1);
+    opacity: 0.8;
+}
+.main .storys .story4:hover{
+    transform:scale(1.1);
+    opacity: 0.8;
+}
+.main .storys .story5:hover{
+    transform:scale(1.1);
+    opacity: 0.8;
+}
+.main .storys .story3{
+    background-image: url(../images/s3.jpg);
+    transition: 0.2s;
+    overflow:hidden;
+}
+.main .storys .story4{
+    background-image: url(../images/s4.jpg);
+    transition: 0.2s;
+    overflow:hidden;
+}
+.main .storys .story5{
+    background-image: url(../images/s5.jpg);
+    transition: 0.2s;
+    overflow:hidden;
+}
+.main .storys .story img {
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border:2px solid blue;
+}
+.main .storys .story2 img{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    border:2px solid blue;
+}
+.main .storys .story3 img{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    border:2px solid blue;
+}
+.main .storys .story4 img{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    border:2px solid blue;
+}
+.main .storys .story5 img{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    border:2px solid blue;
+}
+.main .storys .story p , .story2 p ,.story3 p ,.story4 p , .story5 p{
+    position: absolute;
+    top:85%;
+    color:white;
+}
+
+/*Start of style main active*/
+
+
+.main .activenow{
+    background-color:white;
+    padding:5px;
+    border-radius: 10px;
+    margin-top:20px;
+}
+.main .activenow .nn{
+    color:white;
+    display: inline-block;
+    text-align:center;
+    border-radius: 10px;
+    width:150px;
+    margin-right:10px;
+    cursor: pointer;
+    border:1px solid blue;
+    padding:8px;
+}
+.main .activenow .nn i{
+    color:var(--color3);
+}
+.main .activenow .nn:hover{
+    opacity: 0.8;
+}
+.main .activenow .numm{
+    position:absolute;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background-color: rgb(0, 255, 0);
+    left:10%;
+    top:-50%;
+}
+.main .activenow div{
+    display:inline;
+    position: relative;
+}
+.main .activenow img{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    margin:5px;
+    cursor: pointer;
+}
+/*End of style main active*/
+
+
+/*Start of style main think*/
+.main .think{
+    margin-top:50px;
+    padding:10px;
+    border-radius: 10px;
+}
+.main .think img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+.main .think input[type=text]{
+    padding:8px;
+    border-radius:20px;
+    outline:none;
+    border:none;
+    background-color: var(--color1);
+    width:90%;
+}
+.main .think .feeling{
+    padding:10px;
+    margin: auto;
+}
+.main .think .feeling div{
+    display:inline-block;
+    text-align: center;
+    width:30%;
+}
+.main .think .feeling div i{
+    font-size: 23px;
+}
+.main .think .feeling .fa-photo-video{
+    color:green;
+}
+.main .think .feeling .fa-video{
+    color:#FA383E;
+}
+.main .think .feeling .fa-smile{
+    color:#F5C33B;
+}
+/*End of style main think*/
+
+
+/*Start of style div overlay*/
+.overLay .modal-content {
+    width:450px;
+}
+.overLay .modal-content i{
+    font-size: 21px;
+}
+.overLay .modal-content img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.overLay .modal-content input[type=text]{
+    width: 100%;
+    height:20vh;
+    outline:none;
+    border:none;
+}
+.overLay .modal-content .add{
+    border:2px solid rgb(105, 105, 105);
+    margin-top:10px;
+}
+.overLay .modal-content .add i{
+    font-size:21px;
+    margin-left:2px;
+}
+.overLay .modal-content .add .fa-photo-video{
+    color:green;
+}
+.overLay .modal-content .add .fa-user-friends{
+    color:var(--color3);
+}
+.overLay .modal-content .add .fa-smile{
+    color:#F5C33B;
+}
+.overLay .modal-content .add .fa-microphone{
+    color:#FA383E;
+}
+
+
+.overLay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1,1,1,.8);
+    display: none;
+    z-index:1;
+}
+.modal-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    width: 30%;
+    padding: 0px 0px 30px;
+}
+.open-lay{
+    display: block;
+}
+/*End of style div overlay*/
+
+.main .post{
+    border-radius: 10px;
+}
+.main .post .prof img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+
+.main .post .bg{
+    background-image: url(../images/206793163_1266573053794625_1154713023703348375_n.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    height:70vh;
+    position: relative;
+    border-radius: 10px;
+}
+.main .post .bg img{
+    position:absolute;
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    top:80%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.main .post .like div{
+    display: inline-block;
+    width:30%;
+    text-align: center;
+}
+.main .post .like i{
+    font-size: 25px;
+    color:var(--color1);
+    transition:0.4s;
+}
+.main .post .like i:hover:not(.fa-thumbs-up){
+    color:rgb(143, 143, 143);
+}
+.main .post .like i:hover{
+    transform: scale(1.3);
+}
+.main .post .like .color{
+    color:#1877F2;
+}
+
+
+
+.main .post .comment img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    margin-top:-30px;
+}
+.main .post .comment .comment1 div{
+    display: inline-block;
+    line-height: 22px;
+    margin-left:5px;
+}
+.main .post .comment .comment1 .com{
+    border-radius: 20px;
+    padding:7px;
+    height:53px;
+    background-color: var(--color1);
+}
+.main .post .comment .comment1 .ce input[type=text]{
+    width:600px;
+    background-color:var(--color1);
+    border-radius: 20px;
+    border:none;
+    outline:none;
+    padding:5px;
+}
+
+
+
